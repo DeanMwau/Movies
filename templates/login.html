@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="header">
+    <h1>Log In</h1>
+</div>
+<div class="section">
+    <form action="/login" method="post">
+        <div>
+            <label for="username">Username</label>
+            <input autocomplete="off" autofocus type="text" id="username" name="username" required>
+
+        </div><br>
+        <div>
+            <label for="password">Password</label>
+            <input autocomplete="off" type="password" id="password" name="password" required>
+        </div><br>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+{% endblock %}
